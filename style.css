@@ -1,0 +1,86 @@
+/* ===========================================
+   PHOTO STYLING
+   =========================================== */
+
+/* Profile photo styling with shadow and border effects */
+.photo {
+    padding: 10px;
+    box-shadow: 3px 3px 3px lightgray;
+    border: 1px solid lightgray;   
+    width: 500px;
+    align-items: center;
+}
+
+/* ===========================================
+   LAYOUT CONTAINERS
+   =========================================== */
+
+/* Main container with flexbox layout for sections */
+.container {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;    /* Center content horizontally */
+    align-items: center;        /* Center content vertically */
+    flex-wrap: wrap;           /* Allow items to wrap to next line */
+    box-shadow: 3px 3px 3px lightgray;
+    border: 3px solid lightgray;
+}
+
+/* Individual project card styling */
+.project {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;     /* Stack project content vertically */
+    justify-content: center;    /* Center content horizontally */
+    align-items: center;        /* Center content vertically */
+    flex-wrap: wrap;           /* Allow content to wrap if needed */
+    box-shadow: 3px 3px 3px lightgray;
+    border: 5px solid lightgray;
+}
+
+/* ===========================================
+   TYPOGRAPHY
+   =========================================== */
+
+/* Section headings styling */
+.section {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #470909;            /* Dark red color for light theme */
+}
+
+/* Section headings in dark theme */
+body.dark-theme .section {
+    color: #fbf8f8;            /* Light color for dark theme */
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* ===========================================
+   THEME SYSTEM
+   =========================================== */
+
+/* Light Theme (Default) */
+body {
+    background-color: #ffffff;  /* White background */
+    color: #000000;            /* Black text */
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: #121212;  /* Dark gray background */
+    color: #ffffff;            /* White text */
+}
+
+/* Container adjustments for dark theme */
+.container.dark-theme {
+    border-color: #444444;     /* Darker border for dark theme */
+    box-shadow: none;          /* Remove shadow in dark mode */
+}
